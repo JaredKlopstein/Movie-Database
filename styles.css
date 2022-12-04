@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 8px
+}
+body {
+  height: 100vh;
+}
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 90%;
+  height: 80px;
+}
+
+.nav__link {
+  margin: 0 16px;
+}
+
+.nav__link:visited {
+  text-decoration: none; color: black;
+}
+
+.nav__link-primary {
+  background-color: lightseagreen;
+  padding: 8px 20px;
+  border-radius: 99px;
+  color: white;
+}
+
+.nav__link-primary:visited {
+  text-decoration: none; color: white;
+}
+
+.nav__link-white {
+  text-decoration: none;
+  margin: 0 16px;
+  color: white;
+}
+
+.movies__header {
+  height: 250px;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-image: url('/assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
+}
+
+.no_cursor {
+  cursor: not-allowed;
+}
+
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  margin: 48px 24px; 
+  color: lightseagreen
+}
+
+.sub__title {
+  font-size: 36px;
+  margin: 36px 48px; 
+}
+
+.special {
+  color: lightseagreen;
+}
+
+.search__wrapper {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+.search__input {
+  width: 70%;
+  padding: 24px;
+  height: 60px;
+  border-radius: 24px;
+  font-size: 24px;
+  border: 1px solid black;
+}
+
+.search__btn {
+  width: 20%;
+  height: 60px;
+  padding: 24px;
+  border-radius: 24px;
+  font-size: 16px;
+  border: 1px solid black;
+  background-color: rgb(15, 120, 115);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+}
+
+.search__btn:hover {
+  transform: scale(1.1);
+}
+
+
+.landing__hero {
+  margin: 48px;
+}
+
+.search-title {
+  color: white;
+}
+
+.movie__search {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MOVIE */
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  margin: 8px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.movie-img {
+  width: 100%;
+}
+
+
+.no__result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no__result-title {
+  font-size: 24px;
+}
+.no__result-img {
+  width: 50%;
+  margin: 24px;
+}

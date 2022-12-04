@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Central</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header class="movies__header">
+    <nav class="nav__bar">
+      <div class="logo__container">
+        <img src="/assets/logo.png" alt="">
+      </div>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link-white">Home</a>
+        <a href="movies.html" class="nav__link-white">Find a Movie</a>
+        <a href="" class="nav__link-white nav__link-primary no_cursor">Contact</a>
+      </div>
+    </nav>
+    <h1 class="search-title">Browse our Movie Selection</h1>
+    <div class="search__wrapper">
+      <input type="text" id="input" class="search__input" placeholder="Search by title">
+      <button class="search__btn" onclick="searchMovie()">Search</button>
+    </div>
+  </header>
+  <section class="search__results">
+    <h3>Search Results: </h3>
+      <div class="movie-list">
+        <div class="no__result">
+          <h3 class="no__result-title">Try searching for a movie!</h3>
+          <img class="no__result-img" src="/assets/undraw_searching_re_3ra9.svg" alt="">
+          </div>
+      </div>
+  </section>
+</body>
+<script src="movies.js"></script>
+<script src="index.js"></script>
+</html>
