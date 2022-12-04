@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cinema Central</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
 </head>
 <body>
   <header class="movies__header">
     <nav class="nav__bar">
-      <div class="logo__container">
-        <img src="/assets/logo.png" alt="">
-      </div>
+      <a href="index.html" class="logo__container">
+        Cinema Central
+      </a>
       <div class="nav__links">
         <a href="index.html" class="nav__link-white">Home</a>
         <a href="movies.html" class="nav__link-white">Find a Movie</a>
@@ -21,13 +22,14 @@
       </div>
     </nav>
     <h1 class="search-title">Browse our Movie Selection</h1>
-    <div class="search__wrapper">
+    <form class="search__wrapper">
       <input type="text" id="input" class="search__input" placeholder="Search by title">
-      <button class="search__btn" onclick="searchMovie()">Search</button>
-    </div>
+      <button type="submit" class="search__btn" onclick="searchMovie()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <div class="scroll"></div>
   </header>
   <section class="search__results">
-    <h3>Search Results: </h3>
+    <h3 class="results__title"></h3>
       <div class="movie-list">
         <div class="no__result">
           <h3 class="no__result-title">Try searching for a movie!</h3>
