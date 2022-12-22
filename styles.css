@@ -44,6 +44,7 @@ nav {
 
 .nav__link {
   margin: 0 16px;
+  color: #f4f4f5;
 }
 
 .nav__link:visited {

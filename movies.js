@@ -17,7 +17,7 @@ async function renderMovies() { //added search here
       
     }
     else {
-      const movies = await fetch(`http://www.omdbapi.com/?apikey=76b587ac&s=${localStorage.getItem('id')}`); //added dynamic search here
+      const movies = await fetch(`https://www.omdbapi.com/?apikey=76b587ac&s=${localStorage.getItem('id')}`); //added dynamic search here
       const moviesData = await movies.json();
       console.log(moviesData)
       movieListElem.innerHTML = moviesData.Search.map((movie) => movieHTML(movie)).join('');
